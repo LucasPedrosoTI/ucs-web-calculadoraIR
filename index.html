@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Cálculo IR</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cálculo do imposto de Renda</h1>
+
+      <form id="form">
+        <p>
+          <label for="registro">Registro:</label>
+          <input type="text" name="registro" id="registro" />
+        </p>
+        <p>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" />
+        </p>
+        <p>
+          <label for="salario">Salário:</label>
+          <input type="number" name="salario" id="salario" />
+        </p>
+
+        <div class="buttons">
+          <button type="submit">Calcular IR</button>
+
+          <button type="reset">Limpar</button>
+        </div>
+      </form>
+
+      <div class="results">
+        <p>
+          <label for="imposto">Imposto de Renda: </label>
+          <input type="number" name="imposto" id="imposto" readonly />
+        </p>
+
+        <p>
+          <label for="salarioLiquido">Salário Líquido: </label>
+          <input
+            type="number"
+            name="salarioLiquido"
+            id="salarioLiquido"
+            readonly
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
